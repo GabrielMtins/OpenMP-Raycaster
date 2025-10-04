@@ -80,3 +80,23 @@ que é um renderizador por software rodando em HD.
 Caso você queira testar algumas outras configurações, como tamanho da
 tela a ser renderizada, você pode verificar o arquivo GlobalDef.hpp
 que lá há algumas definições que o programa usa. 
+
+# Como funciona o multithreading?
+
+O OpenMP possui uma diretiva de compilador que paraleliza um for dividindo-o
+entre as threads. Ele é bastante útil para quando os dados do for não são
+dependentes de valores anteriores. Nesse caso, o algoritmo de raycasting é
+ótimo para isso, pois ele renderiza na tela através de faixas verticais. Como
+essas faixas verticais são independentes, podemos paralelizá-las em diversas
+threads. Assim está o trecho do código:
+
+```
+#pragma omp parallel for 
+for(i = 0; i < SCREEN_WIDTH; i++) {
+	processWall(i);
+}
+```
+
+É esse o principal uso de multithreading nessa aplicação. Ainda estou em um
+contato inicial com OpenMP e, talvez, eu ache no futuro alguma outra forma
+melhor, além de paralelizar o for.
