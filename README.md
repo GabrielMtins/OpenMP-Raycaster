@@ -35,7 +35,7 @@ para rodar, que aqui é chamado de *textures.png*.
 
 O programa os seguintes controles:
 
-´´´
+```
 W - andar para frente
 S - andar para trás
 A - andar para esquerda
@@ -43,7 +43,7 @@ D - andar para direita
 J - mirar para a esquerda
 K - mirar para a direita
 mouse - movimentar a câmera
-´´´
+```
 
 # Multithreading e teste de performance
 
