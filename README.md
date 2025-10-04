@@ -1,7 +1,7 @@
 # OpenMP-Raycaster
 
 Este programa é um programa que utiliza a técnica de *Raycasting* para
-renderizar por software, uma cena 3d simples. Além disso, ele também utiliza o
+renderizar por software uma cena 3d simples. Além disso, ele também utiliza o
 *OpenMP* para paralelizar o processo, permitindo que haja otimizações.
 
 Este programa está distribuído sob a licença GNU GPLv3+.
