@@ -76,3 +76,7 @@ Average FPS: 100.9969
 
 Ou seja, um speedup de quase 3 vezes, o que é bastante, considerando
 que é um renderizador por software rodando em HD.
+
+Caso você queira testar algumas outras configurações, como tamanho da
+tela a ser renderizada, você pode verificar o arquivo GlobalDef.hpp
+que lá há algumas definições que o programa usa. 
