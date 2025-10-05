@@ -329,10 +329,10 @@ Vec2 Raycaster::findClosestWallIterate(Vec2 start, const Vec2& delta) const {
 	 * ((int) 2.99) = 2
 	 */
 	if(delta.x < 0.0f) {
-		start.x -= 0.01f;
+		start.x -= 0.001f;
 	}
 	if(delta.y < 0.0f) {
-		start.y -= 0.01f;
+		start.y -= 0.001f;
 	}
 
 	while(1) {

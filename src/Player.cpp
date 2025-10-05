@@ -11,7 +11,7 @@ void Player::handleInput(const Context& context, float dt) {
 	const uint8_t *keys = SDL_GetKeyboardState(NULL);
 	Vec2 wish_dir;
 
-	angle += MOUSE_SENSITIVITY * context.mouse_motion_x;
+	angle += MOUSE_SENSITIVITY * dt * context.mouse_motion_x;
 	direction = Vec2(cosf(angle), sinf(angle));
 
 	if(keys[SDL_SCANCODE_A]) {

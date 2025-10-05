@@ -17,7 +17,7 @@
 #define WORLD_SIZE 10
 
 #define PLAYER_SPEED 4.0f
-#define MOUSE_SENSITIVITY 0.002f
+#define MOUSE_SENSITIVITY 0.5f
 #define TURN_SPEED 4.0f
 
 #endif
